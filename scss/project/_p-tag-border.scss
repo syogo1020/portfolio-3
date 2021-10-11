@@ -1,0 +1,17 @@
+.p-tag-border {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    border: 0.1rem solid $border-color;
+    width: 6rem;
+    top: 14.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    @include mq("md") {
+      display: none;
+    }
+  }
+}

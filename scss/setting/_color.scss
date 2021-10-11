@@ -1,0 +1,21 @@
+// 透過度
+$opacity: 0.6;
+$hover-opacity: 0.8;
+
+//汎用色
+$black: #111;
+$white: #fff;
+$color-222: #222222;
+$color-000: #000000;
+$color-1a1: #1A1A1A;
+$color-d1d: #D1D1D1;
+$background-base-color: #DBD7C7;
+$background-card-color: #2B2B2B;
+$form-color: #FFFF9D;
+$form-textarea-color: #D1D1D1;
+$border-color: #9D9D9D;
+
+body {
+    color: $color-222;
+    background-color: $background-base-color;
+}

@@ -1,0 +1,69 @@
+.p-hero {
+}
+
+.p-hero__img {
+  width: 54%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include mq("md") {
+    width: 40%;
+  }
+}
+
+.p-hero__texts {
+  position: relative;
+  font-family: $second-font-family-en;
+  color: $white;
+  line-height: 1.42142;
+  top: -6.3rem;
+
+  @include mq("md") {
+    top: -33.5rem;
+  }
+}
+
+.p-hero__text--left {
+  position: absolute;
+  left: 2rem;
+  font-weight: $regular;
+  font-size: 4.9rem;
+  letter-spacing: 0.343rem;
+  @include mq("md") {
+    left: 7rem;
+    font-size: 14rem;
+    letter-spacing: 0.98rem;
+  }
+}
+
+.p-hero__text--right {
+  position: absolute;
+  top: 5.8rem;
+  right: 2.4rem;
+  font-weight: $regular;
+  font-size: 4.9rem;
+  letter-spacing: 0.343rem;
+
+  @include mq("md") {
+    font-size: 14rem;
+    letter-spacing: 0.98rem;
+    top: 14rem;
+    right: 9rem;
+  }
+}
+
+.p-hero__text--bottom {
+  font-size: 1.2rem;
+  margin-top: 8.4rem;
+  font-family: $contact-font-family-en;
+  text-align: center;
+  letter-spacing: 0.12rem;
+
+  @include mq("md") {
+    font-size: 1.8rem;
+    margin-top: 5.7rem;
+    letter-spacing: 0.18rem;
+  }
+}

@@ -1,0 +1,8 @@
+.l-contact {
+    margin-top: 32.1%;
+    @include mq("md") {
+        max-width: 92.8rem;
+        margin-top: 18%;
+
+    }
+}

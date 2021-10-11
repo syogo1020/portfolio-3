@@ -1,0 +1,32 @@
+.p-card-text {
+  position: relative;
+  span {
+    position: absolute;
+    color: $white;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6.9rem;
+    font-family: $contact-font-family-en;
+
+    @include mq("md") {
+      font-size: 8.1rem;
+    }
+  }
+}
+
+.p-card-text__small {
+  font-size: 3.1rem;
+  display: inline-block;
+
+  @include mq("md") {
+    font-size: 3.6rem;
+  }
+}
+
+.p-card-text__medium {
+  span {
+    font-size: 6.9rem;
+  }
+}

@@ -1,0 +1,16 @@
+/* FontFamily */
+$base-font-family: "游ゴシック体", sans-serif;
+$second-font-family: "noto-sans-cjk-jp", sans-serif;
+$second-font-family-en: "Optima", sans-serif;
+$contact-font-family-ja: "dnp-shuei-gothic-kin-std", sans-serif;
+$contact-font-family-en: "aktiv-grotesk-extended" , sans-serif;;
+
+body {
+  font-family: $base-font-family;
+}
+
+/* font-weight */
+$regular: 300;
+$normal: 400;
+$medium: 500; 
+$bold: 700;

@@ -1,0 +1,79 @@
+.p-contact-radio {
+}
+
+.p-contact-radio__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+
+  @include mq("md") {
+    margin-top: 3.3rem;
+    flex-wrap: nowrap;
+  }
+}
+
+.p-contact-radio__item {
+  display: block;
+  margin-right: 1rem;
+  margin-bottom: 1.8rem;
+  font-family: $contact-font-family-ja;
+
+  @include mq("md") {
+    margin-right: 3.2rem;
+    margin-bottom: 1.6rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.p-contact-radio__form {
+  + span {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.1rem 0 0 2.8rem;
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: $medium;
+
+    &::before,
+    &::after {
+      content: "";
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      background: #fff;
+      border: 1px solid;
+      display: block;
+      left: 0;
+      width: 2rem;
+      height: 2rem;
+    }
+
+    &::after {
+      background: $color-222;
+      left: 0.5rem;
+      width: 1rem;
+      height: 1rem;
+      opacity: 0;
+    }
+
+    @include mq("md") {
+      font-size: 1.8rem;
+      font-weight: $bold;
+    }
+  }
+
+  &:checked {
+    + span {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}

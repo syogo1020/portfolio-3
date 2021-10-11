@@ -1,0 +1,21 @@
+.p-category {
+}
+
+.p-category__list {
+    color: $color-000;
+    line-height: 1.66667;
+    background-color: $white;
+    display: inline-block;
+    padding: 0.4rem 1.4rem;
+    font-size: 1rem;
+    margin-right: 1rem;
+
+    @include mq("md") {
+        font-size: 1.2rem;
+        padding: 0.5rem 1.4rem;
+    }
+}
+
+.p-category__list--small {
+    font-size: 1rem;
+}

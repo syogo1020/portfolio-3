@@ -1,0 +1,11 @@
+.p-works {
+}
+
+.p-works__text {
+  font-size: 1rem;
+  margin-top: 1rem;
+
+  @include mq("md") {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,55 @@
+.p-form-checkbox {
+  display: none;
+
+  + span {
+    font-weight: $bold;
+    font-family: $contact-font-family-ja;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 1.4rem;
+
+    @include mq("md") {
+      font-size: 1.8rem;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      left: 40%;
+      top: 0.8rem;
+      width: 1rem;
+      height: 0.7rem;
+      background-color: $form-color;
+      border: 1px solid;
+      @include mq("md") {
+        top: 1rem;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      left: 39.5%;
+      border: 0.1rem solid;
+      width: 1rem;
+      height: 0.7rem;
+      background-color: $form-color;
+      top: 1rem;
+
+      @include mq("md") {
+        top: 1.2rem;
+      }
+    }
+  }
+
+  &:checked {
+    + span {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}

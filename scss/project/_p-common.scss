@@ -1,0 +1,39 @@
+.p-common {
+}
+
+.p-common__title {
+  font-family: $second-font-family-en;
+  color: $white;
+  font-weight: $regular;
+}
+
+.p-common__about {
+  font-size: 1.6rem;
+
+  @include mq("md") {
+    font-size: 3.2rem;
+  }
+}
+
+.p-common__works {
+  font-size: 1.6rem;
+
+  @include mq("md") {
+    font-size: 3.2rem;
+  }
+}
+
+.p-common__contact {
+  font-size: 1.6rem;
+
+  @include mq("md") {
+    font-size: 3.2rem;
+  }
+}
+
+.p-common__flow {
+  font-size: 1.6rem;
+  @include mq("md") {
+    font-size: 2.9rem;
+  }
+}

@@ -1,0 +1,14 @@
+.p-contact {
+}
+
+.p-contact__controls {
+  margin-top: 1.9rem;
+  @include mq('md') {
+    margin-top: 8.6rem;
+
+  }
+}
+
+::placeholder {
+  color: $form-textarea-color;
+}
